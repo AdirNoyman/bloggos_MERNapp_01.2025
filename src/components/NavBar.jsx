@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { IKImage } from 'imagekitio-react';
+import Image from './Image';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -6,15 +8,15 @@ const NavBar = () => {
   return (
     <div className="w-full h-16 md:h-20 flex items-center justify-between">
       {/* LOGO */}
-      <div className="flex items-center justify-between gap-4 text-2xl font-bold text-purple-700">
-        <img src="/myLogo2.svg" alt="logo" className="w-10 h-10" />
+      <div className="flex items-center justify-between gap-4 text-2xl font-bold text-purple-700">        
+        <Image src="/myLogo2.svg" imgWidth={35} imgHeight={35} description="logo" />
         <span>Bloggos</span>
       </div>
       {/* MOBILE MENU */}
       <div className="md:hidden">
         {/* MOBILE BUTTON */}
         <div
-          className="cursor-pointer text-4xl"
+          className="cursor-pointer text-4xl pr-3"
           onClick={() => setIsOpen((prev) => !prev)}
         >
           <div className="flex flex-col gap-[5.4px]">
@@ -46,7 +48,7 @@ const NavBar = () => {
           <a href="/popular">Most popular</a>
           <a href="/about">About</a>
           <a href="/login">
-            <button className="py-2 px-4 rounded-3xl bg-blue-800 text-white">
+            <button className="py-2 px-4 rounded-3xl bg-blue-800 hover:bg-blue-700 hover:shadow-md text-white">
               Login 👈
             </button>
           </a>
@@ -59,7 +61,7 @@ const NavBar = () => {
         <a href="/popular">Most popular</a>
         <a href="/about">About</a>
         <a href="/login">
-          <button className="py-2 px-4 rounded-3xl bg-blue-800 text-white">
+          <button className="py-2 px-4 rounded-3xl bg-blue-800 hover:bg-blue-700 hover:shadow-md text-white">
             Login 👈
           </button>
         </a>
