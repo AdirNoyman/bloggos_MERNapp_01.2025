@@ -8,7 +8,7 @@ const MainCategories = () => {
       <div className="flex-1 flex items-center justify-between flex-wrap">
         <Link
           to="/posts"
-          className="bg-blue-800 hover:bg-blue-600 text-white rounded-full px-4 py-2"
+          className="bg-blue-800 hover:bg-blue-600 text-white rounded-full px-4 py-2 hover:shadow-md"
         >
           All Posts
         </Link>
