@@ -11,6 +11,7 @@ const FeaturedPosts = () => {
           src="featured1.jpeg"
           alt="featured 1"
           className="rounded-3xl object-cover"
+          imgWidth="895"
         />
         {/* post details */}
         <div className="flex items-center gap-4">
@@ -34,11 +35,14 @@ const FeaturedPosts = () => {
       {/* 3 Other Posts */}
       <div className="w-full lg:w-1/2 flex flex-col gap-4">
         <div className="lg:h-1/3 flex justify-between gap-4">
-          <Image
-            src="featured2.jpeg"
-            alt="featured 2"
-            className="rounded-3xl object-cover w-1/3 aspect-video"
-          />
+          <div className="w-1/3 aspect-video">
+            <Image
+              src="featured2.jpeg"
+              alt="featured 2"
+              className="rounded-3xl object-cover w-full h-full"
+              imgWidth="298"              
+            />
+          </div>
           {/* post details and title */}
           <div className="w-2/3">
             {/* details */}
@@ -54,11 +58,14 @@ const FeaturedPosts = () => {
           </div>
         </div>
         <div className="lg:h-1/3 flex justify-between gap-4">
-          <Image
-            src="featured3.jpeg"
-            alt="featured 3"
-            className="rounded-3xl object-cover w-1/3 aspect-video"
-          />
+        <div className="w-1/3 aspect-video">
+            <Image
+              src="featured3.jpeg"
+              alt="featured 3"
+              className="rounded-3xl object-cover w-full h-full"
+              imgWidth="298"              
+            />
+          </div>
           {/* post details and title */}
           <div className="w-2/3">
             {/* details */}
@@ -74,11 +81,14 @@ const FeaturedPosts = () => {
           </div>
         </div>
         <div className="lg:h-1/3 flex justify-between gap-4">
-          <Image
-            src="featured4.jpeg"
-            alt="featured 4"
-            className="rounded-3xl object-cover w-1/3 aspect-video"
-          />
+        <div className="w-1/3 aspect-video">
+            <Image
+              src="featured4.jpeg"
+              alt="featured 4"
+              className="rounded-3xl object-cover w-full h-full"
+              imgWidth="298"              
+            />
+          </div>
           {/* post details and title */}
           <div className="w-2/3">
             {/* details */}
