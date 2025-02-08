@@ -31,10 +31,10 @@ const HomePage = () => {
           <Link to="/write" className="hidden md:block relative">
             <svg
               viewBox="0 0 200 200"
-              width="200"
-              height="200"
-              // className="text-lg tracking-widest animate-spin animatedButton"
-              className="text-lg tracking-widest"
+              width="180"
+              height="180"
+              className="text-lg tracking-widest animate-spin animatedButton"
+              // className="text-lg tracking-widest"
             >
               <path
                 id="circlePath"

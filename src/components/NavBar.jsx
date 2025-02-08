@@ -57,10 +57,10 @@ const NavBar = () => {
             isOpen ? '-right-0' : '-right-[100%]'
           } transition-all ease-in-out`}
         >
-          <Link to="/">Home</Link>
-          <Link to="/trending">Trending</Link>
-          <Link to="/popular">Most popular</Link>
-          <Link to="/about">About</Link>
+          <Link to="/" className='hover:text-blue-600'>Home</Link>
+          <Link to="/trending"className='hover:text-blue-600'>Trending</Link>
+          <Link to="/popular" className='hover:text-blue-600'>Most popular</Link>
+          <Link to="/about" className='hover:text-blue-600'>About</Link>
           <Link to="/login">
             <button className="py-2 px-4 rounded-3xl bg-blue-800 hover:bg-blue-700 hover:shadow-md text-white">
               Login 👈
@@ -70,10 +70,10 @@ const NavBar = () => {
       </div>
       {/* DESKTOP MENU */}
       <div className="hidden md:flex items-center gap-8 xl:gap-12 font-medium">
-        <Link to="/">Home</Link>
-        <Link to="/trending">Trending</Link>
-        <Link to="/popular">Most popular</Link>
-        <Link to="/about">About</Link>
+        <Link to="/" className='hover:text-blue-600'>Home</Link>
+        <Link to="/trending" className='hover:text-blue-600'>Trending</Link>
+        <Link to="/popular" className='hover:text-blue-600'>Most popular</Link>
+        <Link to="/about" className='hover:text-blue-600'>About</Link>
        
         <SignedOut>
         <Link to="/login">
